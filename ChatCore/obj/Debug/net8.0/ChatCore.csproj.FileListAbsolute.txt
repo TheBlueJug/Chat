@@ -1,0 +1,11 @@
+C:\Proj\Chat\ChatCore\bin\Debug\net8.0\ChatCore.deps.json
+C:\Proj\Chat\ChatCore\bin\Debug\net8.0\ChatCore.dll
+C:\Proj\Chat\ChatCore\bin\Debug\net8.0\ChatCore.pdb
+C:\Proj\Chat\ChatCore\obj\Debug\net8.0\ChatCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proj\Chat\ChatCore\obj\Debug\net8.0\ChatCore.AssemblyInfoInputs.cache
+C:\Proj\Chat\ChatCore\obj\Debug\net8.0\ChatCore.AssemblyInfo.cs
+C:\Proj\Chat\ChatCore\obj\Debug\net8.0\ChatCore.csproj.CoreCompileInputs.cache
+C:\Proj\Chat\ChatCore\obj\Debug\net8.0\ChatCore.dll
+C:\Proj\Chat\ChatCore\obj\Debug\net8.0\refint\ChatCore.dll
+C:\Proj\Chat\ChatCore\obj\Debug\net8.0\ChatCore.pdb
+C:\Proj\Chat\ChatCore\obj\Debug\net8.0\ref\ChatCore.dll
