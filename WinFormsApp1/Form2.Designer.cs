@@ -64,12 +64,13 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button1.Location = new Point(749, 0);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(166, 95);
             button1.TabIndex = 1;
-            button1.Text = "Send";
+            button1.Text = "Отправить";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 

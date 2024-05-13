@@ -66,13 +66,13 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.None;
-            button1.Font = new Font("Showcard Gothic", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.Location = new Point(178, 397);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(589, 199);
             button1.TabIndex = 1;
-            button1.Text = "Connect";
+            button1.Text = "Подключиться";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -147,12 +147,12 @@
             // 
             // label2
             // 
-            label2.Font = new Font("Showcard Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label2.Location = new Point(133, 153);
             label2.Name = "label2";
             label2.Size = new Size(181, 93);
             label2.TabIndex = 3;
-            label2.Text = "Your nickname:";
+            label2.Text = "Ваше имя:";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             label2.Click += label2_Click;
             // 
@@ -172,12 +172,12 @@
             // 
             label1.BackColor = Color.Transparent;
             label1.Dock = DockStyle.Top;
-            label1.Font = new Font("Showcard Gothic", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Size = new Size(914, 59);
             label1.TabIndex = 1;
-            label1.Text = "Connect to server";
+            label1.Text = "Подключение к серверу";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.Click += label1_Click;
             // 

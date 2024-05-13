@@ -152,9 +152,14 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            Client.Instance.send_message(message_to_send);
-
+            if (message_to_send != null)
+            {
+                Client.Instance.send_message(message_to_send);
+            }
+            else
+            {
+                DialogResult result = MessageBox.Show("Не оставляйте текст своего сообщения пустым", "Ошибка");
+            }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

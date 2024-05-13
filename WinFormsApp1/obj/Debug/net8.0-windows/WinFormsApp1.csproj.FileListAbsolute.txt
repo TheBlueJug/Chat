@@ -47,3 +47,4 @@ C:\Proj\Chat\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig
 C:\Proj\Chat\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
 C:\Proj\Chat\WinFormsApp1\bin\Debug\net8.0-windows\ChatCore.dll
 C:\Proj\Chat\WinFormsApp1\bin\Debug\net8.0-windows\ChatCore.pdb
+C:\Proj\Chat\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
