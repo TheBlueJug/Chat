@@ -95,7 +95,7 @@
             Controls.Add(listBox1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form2";
-            Text = "Form2";
+            Text = "Отпрака сообщений";
             FormClosed += Form2_FormClosed;
             Load += Form2_Load;
             panel1.ResumeLayout(false);

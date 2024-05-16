@@ -121,10 +121,7 @@ namespace ChatCore
             
         }
 
-        ~Client()
-        {
-            close_connect();
-        }
+        
 
 
     }

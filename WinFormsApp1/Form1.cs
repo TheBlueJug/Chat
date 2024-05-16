@@ -4,6 +4,9 @@ namespace WinFormsApp1
     using System.Net.Sockets;
     using System.Net;
     using System.Text;
+    using System.Text.RegularExpressions;
+
+    using System.Text.RegularExpressions;
 
     public partial class Form1 : Form
     {
@@ -17,11 +20,29 @@ namespace WinFormsApp1
         private string text_port;
         private int port;
 
-        private void Destroy()
+        private bool StringIsInt(string str)
         {
-            this.Controls.Clear();
+            int numeric_value;
+            if (int.TryParse(str, out numeric_value))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
-        private void Form1_Load(object sender, EventArgs e)
+
+        
+
+        private bool IsValidIPAddress(string ipAddress)
+        {
+
+            string pattern = @"^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$";
+            return Regex.IsMatch(ipAddress, pattern);
+        }
+
+    private void Form1_Load(object sender, EventArgs e)
         {
 
         }
@@ -72,7 +93,13 @@ namespace WinFormsApp1
             {
                 flag = false;
                 DialogResult result = MessageBox.Show("Порт должен быть числом", "Ошибка");
-            }
+            };
+
+            if (!IsValidIPAddress(ip)) {
+
+                flag = false;
+                DialogResult result = MessageBox.Show("Ведите коретный IP, формата int.int.int.int, где int это целое число от 0-255", "Ошибка");
+            };
 
             if (flag)
             {

@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using ChatCore;
+using System.Collections;
 namespace WinFormsApp1
 {
     public partial class Form2 : Form
@@ -22,6 +23,7 @@ namespace WinFormsApp1
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            
             
             Client.initialize(DataBank.ip, DataBank.port);
 
@@ -37,6 +39,8 @@ namespace WinFormsApp1
             Client.Instance.start_recive();
 
         }
+
+        
 
         private System.Windows.Forms.Timer updateTimer;
 
@@ -60,12 +64,21 @@ namespace WinFormsApp1
                 
 
                 List<string> messages_list = Client.Instance.get_messages_list();
-                messages_lenght = messages_list.Count();
-                if (messages_lenght != prev_messages_lenght)
+                
+
+                List<string> listBoxItems = listBox1.Items.Cast<string>().ToList();
+
+                
+
+                if (!messages_list.SequenceEqual(listBoxItems))
                 {
-                    listBox1.Items.Add(messages_list[messages_lenght - 1]);
+                    
+
+                    listBox1.Items.Clear();
+                    listBox1.Items.AddRange(messages_list.ToArray());
+
+
                 }
-                prev_messages_lenght = messages_lenght;
             }
             
         }
@@ -110,8 +123,8 @@ namespace WinFormsApp1
             frm1.Show();
             Client.Instance.close_connect();
             prev_messages_lenght = 0;
-            
 
+            
         }
     }
 }
