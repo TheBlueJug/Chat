@@ -37,9 +37,7 @@ namespace ChatCore
         private Socket clientSocket;
         IPEndPoint serverEndPoint;
 
-        /*private string message;
-        private string prev_message;
-        private string message_to_send;*/
+        
 
         private List<string> messages = new List<string>();
 
@@ -52,24 +50,7 @@ namespace ChatCore
         {
             return messages;
         }
-        /*private int messages_lenght;
-        private int prev_messages_lenght;*/
-
-
-
-
-
-        /*public string get_message() { return message; }
-        public void set_message(string message) { this.message = message; }
-
-        public string get_prev_message() { return prev_message; }
-        public void set_prev_message(string prev_message) { this.prev_message = prev_message; }
-
-        public string get_message_to_send() {  return message_to_send; }
-        public void set_message_to_send(string message_to_send) { this.message_to_send = message_to_send; }
-
-        public int get_messages_length() { return messages_lenght; }
-        public void set_messages_length(int messages_lenght) { this.messages_lenght =  messages_lenght; }*/
+        
 
 
 
@@ -112,14 +93,14 @@ namespace ChatCore
                     if (bytesReceived == 0)
                         break;
 
-                    // Выводим сообщение в консоль
+                    
                     string message = Encoding.UTF8.GetString(buffer, 0, bytesReceived);
                     messages.Add(message);
-                    //Console.WriteLine(message);
+                    
                 }
                 catch (Exception ex)
                 {
-                    //Console.WriteLine($"Ошибка при получении сообщения: {ex.Message}");
+                    
                     break;
                 }
             }
@@ -132,11 +113,17 @@ namespace ChatCore
 
         }
 
+        public void close_connect()
+        {
+            instance = null;
+            clientSocket.Shutdown(SocketShutdown.Both);
+            clientSocket.Close();
+            
+        }
 
         ~Client()
         {
-            clientSocket.Shutdown(SocketShutdown.Both);
-            clientSocket.Close();
+            close_connect();
         }
 
 

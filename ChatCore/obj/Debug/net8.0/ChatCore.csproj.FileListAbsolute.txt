@@ -9,3 +9,4 @@ C:\Proj\Chat\ChatCore\obj\Debug\net8.0\ChatCore.dll
 C:\Proj\Chat\ChatCore\obj\Debug\net8.0\refint\ChatCore.dll
 C:\Proj\Chat\ChatCore\obj\Debug\net8.0\ChatCore.pdb
 C:\Proj\Chat\ChatCore\obj\Debug\net8.0\ref\ChatCore.dll
+C:\Proj\Chat\ChatCore\obj\Debug\net8.0\ChatCore.sourcelink.json

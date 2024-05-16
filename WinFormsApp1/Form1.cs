@@ -71,7 +71,7 @@ namespace WinFormsApp1
             else
             {
                 flag = false;
-                DialogResult result = MessageBox.Show("Порт должен быть целым числом", "Ошибка");
+                DialogResult result = MessageBox.Show("Порт должен быть числом", "Ошибка");
             }
 
             if (flag)
@@ -79,9 +79,10 @@ namespace WinFormsApp1
                 DataBank.user_name = user_name;
                 DataBank.port = port;
                 DataBank.ip = ip;
-                this.Hide();
+                
                 frm2 = new Form2();
                 frm2.Show();
+                this.Hide();
             }
             
         }
