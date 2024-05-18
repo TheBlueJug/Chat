@@ -30,7 +30,10 @@ namespace WinFormsApp1
 
             Client.Instance.connect();
             Client.Instance.nickname_send(DataBank.user_name);
-
+            Client.Instance.publicKey_send();
+            
+            Client.Instance.recieve_key();
+            Client.Instance.recieve_IV();
             updateTimer = new System.Windows.Forms.Timer();
             updateTimer.Interval = 10; // 1 секунда
             updateTimer.Tick += UpdateTimer_Tick;
